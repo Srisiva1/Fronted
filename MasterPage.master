@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>A Flexible Privacy-Preserving Data Sharing Scheme
+in Cloud Computing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="scripts/jquery.hslides.1.0.js"></script>
+<script type="text/javascript" src="scripts/jquery.hslides.setup.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 24px;
+        }
+    </style>
+</head>
+<body id="top"  >
+<form id="form1" runat="server">
+<div id="header">
+  <div class="wrapper">
+    <div class="fl_left">
+      <h1  style ="text-align :center ;"><a  style ="font-size :x-large;">A Flexible Privacy-Preserving Data Sharing Scheme
+in Cloud Computing</a></h1>
+      
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div id="topbar">
+  <div class="wrapper">
+   
+    
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+<!-- ####################################################################################################### -->
+<div id="homecontent" style= "height :40px ; background-color :Black ; ">
+  
+</div>
+<!-- ####################################################################################################### -->
+<div id="container" style ="background-color : White ;">
+      
+     <table width ="100%">
+     <tr><td><br /></td></tr>
+    <tr><td>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="60px" />
+           <Items>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Homepage" Value="Homepage">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ACLogin.aspx" Text="AC Login" Value="AC Login">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="Admin Login" 
+                    Value="Admin Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/DataOwnerLogin.aspx" Text="Data Owner" 
+                    Value="Data Owner"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/DataUserLogin.aspx" Text="Data User" 
+                    Value="Data User"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="60px" />
+        </asp:Menu>
+        </td></tr>
+    
+    <tr><td class="style1">
+        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="100px" />
+             <Items>
+                <asp:MenuItem NavigateUrl="~/ACViewDataOwner.aspx" 
+                    Text="Data Owner Verification" Value="Data Owner Verification">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ACViewDataUser.aspx" Text="Data User Verification" 
+                    Value="Data User Verification"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="100px" />
+        </asp:Menu>
+        </td></tr>
+    
+    <tr><td>
+        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="40px" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AdminViewVerifiedDataOwnerDetails.aspx" 
+                    Text="View Data Owner" Value="View Data Owner"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewVerifiedUserDetails.aspx" 
+                    Text="View Data User" Value="View Data User"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewOwnerUploadFileDetails.aspx" 
+                    Text="View Upload Files" Value="View Upload Files"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewUserDownloadFileDetails.aspx" 
+                    Text="View Download Files" Value="View Download Files"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="40px" />
+        </asp:Menu>
+        </td></tr>
+    
+    <tr><td>
+        <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="55px" />
+<Items>
+                <asp:MenuItem Text="Upload" Value="Upload">
+                    <asp:MenuItem NavigateUrl="~/OwnerFileUploading.aspx" Text="Upload File" 
+                        Value="Upload File"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/OwnerViewUploadFileDetails.aspx" 
+                        Text="View Upload Files" Value="View Upload Files"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/OwnerViewRequestInformation.aspx" 
+                    Text="View User Request" Value="View User Request"></asp:MenuItem>
+                <asp:MenuItem Text=" File Request" Value=" File Request">
+                    <asp:MenuItem NavigateUrl="~/OwnerViewUserRequestFile.aspx" 
+                        Text="View File Request" Value="View File Request"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/OwnerViewAcceptedRejectedFileDetails.aspx" 
+                        Text="View Accept/Reject File Status" Value="View Accept/Reject File Status">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/OwnerViewDownloadFiles.aspx" Text="View Download" 
+                    Value="View Download"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="55px" />
+        </asp:Menu>
+        </td></tr>
+    
+    <tr><td>
+        <asp:Menu ID="Menu5" runat="server" Orientation="Horizontal" 
+            StaticEnableDefaultPopOutImage="False" Visible="False">
+            <DynamicHoverStyle ForeColor="Red" />
+            <DynamicMenuItemStyle HorizontalPadding="85px" />
+          <Items>
+                <asp:MenuItem Text="Request" Value="Request">
+                    <asp:MenuItem NavigateUrl="~/UserSendOwnerRequest.aspx" Text="Request to Owner" 
+                        Value="Request to Owner"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserViewRequestDetails.aspx" 
+                        Text="View Request Status" Value="View Request Status"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="File Request" Value="File Request">
+                    <asp:MenuItem NavigateUrl="~/ViewDataOwnerFile.aspx" 
+                        Text="View File and Send Request" Value="View File and Send Request">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserViewRequestedFileDetails.aspx" 
+                        Text="View File Request Status" Value="View File Request Status">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Download" Value="Download">
+                    <asp:MenuItem NavigateUrl="~/UserFileDownload1.aspx" Text="File Download" 
+                        Value="File Download"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UserViewDownloadFiles.aspx" 
+                        Text="View Download Files" Value="View Download Files"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle ForeColor="Red" />
+            <StaticMenuItemStyle HorizontalPadding="85px" />
+        </asp:Menu>
+        </td></tr>
+        <tr><td><br /></td></tr>
+    
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+</div>
+<!-- ####################################################################################################### -->
+<div id="footer">
+  
+</div>
+<!-- ####################################################################################################### -->
+<div id="copyright">
+  <div class="wrapper">
+    
+    
+    <br class="clear" />
+  </div>
+</div>
+</form> 
+</body>
+
+</html>
+
